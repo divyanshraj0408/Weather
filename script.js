@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
             longitude = position.coords.longitude;
             latitude = position.coords.latitude;
 
-            const api = `http://api.weatherapi.com/v1/current.json?key=f4fb2a56cd614baa90b115318211105&q=${latitude},${longitude}&aqi=no`;
+            const api = `https://api.weatherapi.com/v1/current.json?key=f4fb2a56cd614baa90b115318211105&q=${latitude},${longitude}&aqi=no`;
             fetch(api)
                 .then((data) => {
                     return data.json();
